@@ -1,4 +1,4 @@
-FROM openjdk:9
+FROM openjdk:7
 
 RUN apt-get update \
 	&& apt-get install -y --no-install-recommends \
