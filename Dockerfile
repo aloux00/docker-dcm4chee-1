@@ -7,10 +7,10 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 
 # Install dcm4chee
-RUN curl -L -O http://downloads.sourceforge.net/project/dcm4che/dcm4chee/2.18.3/dcm4chee-2.18.3-mysql.zip \
-	&& unzip dcm4chee-2.18.3-mysql.zip -d /opt/ \
-	&& ln -s /opt/dcm4chee-2.18.3-mysql /opt/dcm4chee \
-	&& rm -f dcm4chee-2.18.3-mysql.zip
+RUN curl -L -O http://downloads.sourceforge.net/project/dcm4che/dcm4chee/2.18.1/dcm4chee-2.18.1-mysql.zip \
+	&& unzip dcm4chee-2.18.1-mysql.zip -d /opt/ \
+	&& ln -s /opt/dcm4chee-2.18.1-mysql /opt/dcm4chee \
+	&& rm -f dcm4chee-2.18.1-mysql.zip
 
 # Install JBoss 4.2.3.GA
 RUN curl -L -O http://downloads.sourceforge.net/project/jboss/JBoss/JBoss-4.2.3.GA/jboss-4.2.3.GA.zip \
